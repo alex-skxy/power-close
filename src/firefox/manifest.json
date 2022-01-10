@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Power Close",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A browser extension, for the tab addict, to close all tabs with urls containing a keyword or a domain name.",
   "icons": {
     "16": "icons/16.png",
@@ -18,7 +18,17 @@
   },
   "author": "Mosab Ibrahim",
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Sens a 'toggle-feature' event to the extension"
+    }
   },
   "homepage_url": "https://github.com/mos3abof/firefox-power-close",
   "permissions": [
