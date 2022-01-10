@@ -1,19 +1,43 @@
 html, body {
-	padding-top:25px;
-    height: 160px;
-    width: 300px;
-    overflow-y:hidden;
-  	overflow-x:hidden;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background: rgb(56,54,72);
+    color: white;
 }
 
 input {
-    width: 275px;
-    margin: 15px;
+    width: 350px;
+    font-size: 1.5em;
     padding: 5px;
+    border: #ff9e3f 2px solid;
+    border-radius: 5px;
+    background-color: #2b2a33;
+    color: #9999b0;
+    text-align: center;
 }
 
 h2 {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
+    font-size: 1.5em;
+    width: 100%;
+    color: #b073ec;
+}
+
+h2::before, h2::after {
+    background: rgb(221, 97, 202);
+    background: linear-gradient(90deg, rgba(221, 97, 202, 1) 0%, rgba(255, 158, 63, 1) 17%, rgba(130, 0, 255, 1) 69%, rgba(0, 212, 255, 1) 100%);
+    height: 2px;
+    flex: 1;
+    content: '';
 }
 
 .footer-message {
